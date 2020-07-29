@@ -91,19 +91,3 @@ class LinkedList:
             current_node.prev = current_node.next
             current_node.next = prev_node
             current_node = prev_node
-
-
-if __name__ == '__main__':
-    nodes = [Node(i) for i in range(1, 4)]
-    llist = LinkedList(nodes)
-    # for node in llist:
-    #     print(node)
-
-    # llist.reverse()
-    # for node in llist:
-    #     print(node)
-
-    # print(Node(2) in llist)
-    llist.remove(Node(1))
-    for node in llist:
-        print(node)
